@@ -225,10 +225,10 @@ void TextLine::draw() {
 	assert(visible_glyph_count_ <= glyph_count_);
 	for (size_t i = 0; i < visible_glyph_count_; ++i) {
 		hb_codepoint_t glyphid = glyph_info_[i].codepoint;
-		float x_offset = glyph_pos_[i].x_offset / 64.0;
-		float y_offset = glyph_pos_[i].y_offset / 64.0;
-		float x_advance = glyph_pos_[i].x_advance / 64.0;
-		float y_advance = glyph_pos_[i].y_advance / 64.0;
+		float x_offset = glyph_pos_[i].x_offset / 64.0f;
+		float y_offset = glyph_pos_[i].y_offset / 64.0f;
+		float x_advance = glyph_pos_[i].x_advance / 64.0f;
+		float y_advance = glyph_pos_[i].y_advance / 64.0f;
 
 
 		if(FT_Load_Glyph(face_, glyphid, FT_LOAD_DEFAULT) != 0) {
@@ -305,7 +305,7 @@ void TextBox::set_contents(std::vector<std::pair<glm::uvec4, std::string>> conte
 		for (size_t i = 0; i < contents_.size(); i++) {
 			lines_.push_back(std::make_shared<TextLine>(contents_.at(i).second,
 			                    position_.x,
-			                    position_.y + font_size_ * i,
+			                    position_.y + int(font_size_ * i),
 			                    contents_.at(i).first,
 			                    font_size_,
 			                    animation_speed_,
@@ -322,7 +322,7 @@ void TextBox::set_contents(std::vector<std::pair<glm::uvec4, std::string>> conte
 		for (size_t i = 0; i < contents_.size(); i++) {
 			lines_.push_back(std::make_shared<TextLine>(contents_.at(i).second,
 			                    position_.x,
-			                    position_.y + font_size_ * i,
+			                    position_.y + int(font_size_ * i),
 			                    contents_.at(i).first,
 			                    font_size_,
 			                    std::nullopt,
@@ -337,7 +337,7 @@ Dialog::Dialog(std::vector<std::pair<glm::uvec4, std::string>> prompts, std::vec
 		  std::make_shared<TextBox>(prompts, glm::uvec2(PADDING_LEFT, PADDING_TOP), view::fs, std::make_optional(50.0f))} {
 	
 	for (size_t i = 0; i<options_.size(); i++) {
-		int POS_Y = PADDING_TOP + prompt_box_->get_height() + view::fs + i * view::fs;
+		int POS_Y = int(PADDING_TOP) + prompt_box_->get_height() + view::fs + int(i) * view::fs;
 		auto choice = std::make_shared<TextLine>("[ ]", PADDING_LEFT, POS_Y, glm::uvec4(255), view::fs, std::nullopt, false, "IBMPlexMono-Regular.ttf");
 		auto text = std::make_shared<TextLine>(options_.at(i), PADDING_LEFT + view::fs*2, POS_Y, glm::uvec4(255), view::fs, std::nullopt, false);
 		option_lines_.emplace_back(choice, text);
