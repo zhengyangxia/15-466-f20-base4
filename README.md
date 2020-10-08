@@ -1,10 +1,12 @@
-# (TODO: your game's title)
+# Transfer Saga
 
-Author: (TODO: your name)
+Author: Zhengyang Xia
 
-Design: (TODO: In two sentences or fewer, describe what is new and interesting about your game.)
+Design: The player plays the role of the director of a top football club and experiences the
+various decisions he has to face during a transfer window. Trying to keep the coach, the fans
+and the board happy is not an easy task!
 
-Text Drawing: (TODO: how does the text drawing in this game work? Is text precomputed? Rendered at runtime? What files or utilities are involved?)
+Text Drawing: Text is rendered at runtime. TrueType fonts are loaded and processed with harfbuzz into glyphss.
 
 Screen Shot:
 
@@ -12,9 +14,12 @@ Screen Shot:
 
 How To Play:
 
-(TODO: describe the controls and (if needed) goals/strategy.)
+Use up and down keys to move the cursor. Use Enter to select options. During the course of text
+animation, use Enter to skip animation and display all the text. Press ESC to quit the game.
 
-Sources: (TODO: list a source URL for any assets you did not create yourself. Make sure you have a license for the asset.)
+Sources:
+Text Drawing code is based on the code by [Xiaoqiao Xu and Fengying Yang](github.com/xuxiaoqiao/game-marios) 
+Font used is [Computer Modern](https://en.wikipedia.org/wiki/Computer_Modern) and [IBM Plex Mono](fonts.google.com/featured/Plex)
 
 This game was built with [NEST](NEST.md).
 

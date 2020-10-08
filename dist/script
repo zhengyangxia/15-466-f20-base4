@@ -1,0 +1,425 @@
+4
+You 1.0 1.0 0.0 1.0
+Ole 1.0 0.0 0.0 1.0
+Twitter 0.0 0.0 1.0 1.0
+Ousmane 0.0 1.0 0.0 1.0
+
+Menu 0 0 0 0
+0. Transfer Saga
+-2.
+Start
+Opening
+Quit
+RealEnd
+
+Opening 0 0 0 0
+0. It is the end of the 2019-20 football season. It is also the beginning of the busiest 
+0. period for your job as a club director: the annual transfer window that lasts 8 weeks.
+0. Your club, Manchester Red, managed to finish second in the past domestic league 
+0. season. However, you are over 20 points behind the champion and your derby rival, 
+0. Manchester Blue. Fans are calling for the club to improve the squad further and
+0. become a real title challenger in the next season.
+0. The board has given you a budget of 100 million euros in transfer fee. This is the
+0. maximum NET spending you can make over the entire window. Selling existing
+0. players may allow you to spend more than this amount in acquiring new players.
+0. Your decisions will affect how the fans and the coach perceive you. Try to do a good
+0. job and keep both of them happy!
+0. Press ENTER to continue
+-1.
+Continue
+MeetWithOle1
+
+MeetWithOle1 0 100 0 0
+0. The head coach of the team, Ole, has arranged a meeting with you this morning to
+0. discuss his targets for this transfer window.
+2. Good morning Mr. Director. Currently, the biggest weakness in our squad is the
+2. position of Right Winger. If we can strengthen this position during this transfer
+2. window, I promise we will be able to win the league next year.
+2. My scouts and I have identified three players in this position as potential
+2. targets. Here are their reports for your to review.
+2. Just a reminder, I would like to know my squad and start preparing for the next
+2. season as soon as possible, so it would be great if you can finish all the transfers
+2. in the first month.
+-3.
+Jadon's report
+JadonReport
+Ousmane's report
+OusmaneReport
+Facundo's report
+FacundoReport
+
+JadonReport 0 0 0 0
+0. Jadon is our first-choice target. He is only 19 years old, but he is already one of
+0. the best wingers in the world and has proven himself in multiple top competitions.
+0. Jadon is also a fan favorite because he was born in Manchester. Because of this, he
+0. is personally very willing to come back and play for a home club. 
+0. Jadon's contract is set to expire next year, which means if his current club,
+0. Ruhr Yellow, does not sell him this summer, they risk losing him for free next year.
+0. The only downside of this deal is that he will be a very expensive transfer as
+0. everyone knows Jadon is on his way to become a superstar.
+0. We estimate that Jadon is worth at least 90 million euros. 
+-3.
+Ousmane's report
+OusmaneReport
+Facundo's report
+FacundoReport
+Continue
+MeetWithOle2
+
+OusmaneReport 0 0 0 0
+0. Ousmane is our second-choice target. He used to be regarded as the most talented
+0. right winger in the world, but he has suffered several severe injuries in recent
+0. years. Over the past season he made only 14 apperances out of the total 50 games.
+0. However, when Ousmane is fit to play, he can definitely bring huge improvements
+0. to our team.
+0. Ousmane is known to have disciplinary issues where he miss training sessions in
+0. mornings because of staying up and playing video games. 
+0. Fans are divided in their opinions regarding Ousmane for the reasons mentioned.
+0. Ousmane is not eagerly looking for a move and is inclined to stay at Barca, but
+0. we may be able to pursuade him otherwise.
+0. We estimate that Ousmane is worth around 40 million euros. 
+-3.
+Jadon's Report
+JadonReport
+Facundo's Report
+FacundoReport
+Continue
+MeetWithOle2
+
+FacundoReport 0 0 0 0
+0. Facundo is our third-choice target. He is only 18 years old and still a very
+0. raw player, but he has shown the potential of a great player. 
+0. Facundo will not bring immediate improvements to our team, but if he improves
+0. as expected he will be a first-team player in 2-3 years.
+0. This is in line with our club's philosophy of cultivating talented young players
+0. on our own, so fans will most likely love this transfer.
+0. Facundo wants to move to a top-tier club like us, but he is also interested in
+0. and monitored by a lot of other clubs.
+0. Facundo has a release-clause of 10 million euros, which means any can get him at
+0. this price without negotiating with his current club.
+0. We estimate that he is worth around 15 million euros.
+-3.
+Jadon's report
+JadonReport
+Ousmane's report
+OusmaneReport
+Continue
+MeetWithOle2
+
+MeetWithOle2 0 0 0 0
+2. In terms of incoming transfers, this is the only goal I have. I trust that
+2. you will be able to get me at least one of these three players. Two is even better!
+1. What about outgoing transfers? Any players you want to me to sell?
+2. Well, as a coach I would always prefer to have more choices at my disposal.
+2. But if you have to let someone go, I guess I will not be against selling Chris.
+-2.
+Got it. I will start processing these transfers and I will keep you updated.
+SelectTarget
+Why Chris? I thought he is a great player.
+ChrisReport
+
+ChrisReport 0 0 0 0
+2. That's true, but he has told me that he wants to leave. We have enough players
+2. in his position and he wants to get more consistent game time.
+-2.
+I see. You are the coach, I should listen to you.
+SelectTarget
+Why don't you let him play more then? I think he's the best defender in our team.
+Quarrel
+
+Quarrel 0 0 0 -1
+2. Are you questioning my judgements as the coach? I am the professional
+2. in football, not you. Why don't you focus on your job and make the transfers
+2. happen instead?
+1. But...
+0. Ole leaves the meeting room and slams the door on his way out.
+-1.
+Proceed
+SelectTarget
+
+SelectTarget 0 0 0 0
+0. You may now send out a representative to enquire about one of the potential
+0. transfer targets.
+-3.
+Approach Jadon
+JadonTalk1
+Approach Ousmane
+OusmaneTalk1
+Approach Facundo
+FacundoTalk1
+
+SelectTarget1 0 0 0 0
+0. You may now send out a representative to enquire about one of the potential
+0. transfer targets.
+-2.
+Approach Ousmane
+OusmaneTalk1
+Approach Facundo
+FacundoTalk1
+
+SelectTarget2 0 0 0 0
+0. You may now send out a representative to enquire about one of the potential
+0. transfer targets.
+-2.
+Approach Jadon
+JadonTalk1
+Approach Facundo
+FacundoTalk1
+
+SelectTarget3 0 0 0 0
+0. You may now send out a representative to enquire about one of the potential
+0. transfer targets.
+-2.
+Approach Jadon
+JadonTalk1
+Approach Ousmane
+OusmaneTalk1
+
+JadonTalk1 1 0 0 0
+0. Ruhr Yellow has informed you that they are willing to sell Jadon for
+0. 120 million euros. They would not accept any bargains. They have also set a
+0. deadline of week 4 so that if they do end up selling Jadon, they want enough time
+0. to find a replacement player for him. Jadon himself is willing to join.
+-3.
+Submit a bid of 100 million euros. This gives Ruhr Yellow one week to decide.
+JadonBid
+Attempt to sell a player and then pay the 120 million euros as demanded.
+ChrisTalk
+Give up on the deal and approach other targets.
+SelectTarget1
+
+JadonBid 1 0 0 0
+0. Ruhr Yello has rejected your bid and confirmed again that they will only accept
+0. a bid of 120 million euros.
+-2.
+Attempt to sell a player and then pay the 120 million euros as demanded.
+ChrisTalk
+Give up on the deal and approach other targets.
+SelectTarget1
+
+JadonYes 1 -120 5 5
+0. You have signed Jadon for 120 million euros.
+0. You called Ole to inform him of this transfer.
+2. Fantastic! This is all I have asked for! Thank you for your hard work!
+0. Your media assistant has compiled some fan reactions from Twitter for you:
+3. @ManRedNo1Fan: JADON IS COMING HOME!!! #JADONBACK
+3. @FckManBlue: HERE WE GO! WE ARE GOING TO WIN THE LEAGUE NEXT YEAR!
+-1.
+Proceed
+End3
+
+JadonNoMoney 0 0 0 0
+0. You don't have enough budget to complete this transfer.
+-1.
+Proceed
+JadonTalk1
+
+ChrisTalk 1 0 0 0
+0. Milan Blue heard that you are preparing to sell Chris.
+0. They submitted a bid of 20 million euros for the player, which is around
+0. the market value for him.
+-2.
+Accept
+ChrisYes
+Reject
+ChrisNo
+
+ChrisYes 0 20 -1 +1
+0. You have sold Chris for 20 million euros.
+0. You called Ole to inform him of this transfer.
+2. Good job on completing this sale. Now I believe we have enough
+2. funds to go after Jadon, right?
+0. Your media assistant has compiled some fan reactions from Twitter for you:
+3. @ManRedNo1Fan: Sad to see club legend Chris go like this. We owe him a trophy.
+3. @FckManBlue: Chris is worth at least double that price. Milan Blue got
+3. another good deal out of us.
+-1.
+Bid 120m for Jadon
+JadonYes
+
+ChrisNo 0 0 -1 0
+0. You have rejected the bid for Chris and Milan Blue decided to 
+0. move on to other targets.
+0. You called Ole to inform him of this transfer.
+2. I am not against this as long as you still sign the RW I need.
+0. Your media assistant has compiled some fan reactions from Twitter for you:
+3. @ManRedNo1Fan: Chris wanted to leave. We should have respected that.
+3. @FckManBlue: Why didn't we accept that 20m bid? That was good price for around
+3. player we no longer need!
+-1.
+Approach other targets.
+SelectTarget
+
+OusmaneTalk1 1 0 0 0
+0. Barca has informed you that they are willing to sell Ousmane for 50 million
+0. euros. However, Ousmane is still hesitant about joining Manchester Red.
+-3.
+Accept the asking price of 50 million euros.
+OusmaneWage1
+Submit a bid of 30 million euros. This gives Barca one week to decide.
+OusmaneBid1
+Reject the deal and approach other targets.
+SelectTarget2
+
+OusmaneWage1 0 0 0 0
+4. I appreciate your interest, but I don't really want to move to your
+4. club at this point.
+-2.
+I can double the wage you are currently earning at Barca.
+OusmaneYes1
+Understandable. Let me know if you change your mind later.
+SelectTarget2
+
+OusmaneBid1 1 0 0 0
+0. Barca has rejected your offer, but they informed you that they will be willing to
+0. accept an offer of 45 million euros.
+-3.
+Accept the asking price of 45 million euros.
+OusmaneWage2
+Submit a bid of 40 million euros. This gives Barca one week to decide.
+OusmaneBid2
+Reject the deal and approach other targets.
+SelectTarget2
+
+OusmaneWage2 0 0 0 0
+4. I appreciate your interest, but I don't really want to move to your
+4. club at this point.
+-2.
+I can double the wage you are currently earning at Barca.
+OusmaneYes2
+Understandable. Let me know if you change your mind later.
+SelectTarget2
+
+OusmaneBid2 1 0 0 0
+0. Barca has accepted your offer. You can now proceed to talk to the player.
+4. Ousmane: I appreciate your interest, but I don't really want to move to your
+4. club at this point.
+-2.
+I can double the wage you are currently earning at Barca.
+OusmaneYes3
+Understandable. Let me know if you change your mind later.
+SelectTarget2
+
+OusmaneYes1 1 -50 -2 1
+0. You have signed Ousmane for 50 million euros.
+0. You called Ole to inform him of this transfer.
+2. Ole: Thank you for making this transfer happen. I really appreciate it.
+0. Your media assistant has compiled some fan reactions from Twitter for you:
+2. @ManRedNo1Fan: WTF are we doing, paying 50m for someone who cannot even
+2. play for the majority of the season? What a WASTE OF MONEY!!!
+2. @FckManBlue: EXCUSE ME, how much are we paying him in wage??? This director 
+2. has no idea what he is doing. Since when are we relying on $$$ to attract
+2. players?
+-2.
+Approach other targets.
+SelectTarget2
+Give up on other targets.
+End2
+
+OusmaneYes2 1 -45 -2 1
+0. You have signed Ousmane for 45 million euros.
+0. You called Ole to inform him of this transfer.
+2. Ole: Thank you for making this transfer happen. I really appreciate it.
+0. Your media assistant has compiled some fan reactions from Twitter for you:
+2. @ManRedNo1Fan: WTF are we doing, paying 45m for someone who cannot even
+2. play for the majority of the season? What a WASTE OF MONEY!!!
+2. @FckManBlue: EXCUSE ME, how much are we paying him in wage??? This director 
+2. has no idea what he is doing. Since when are we relying on $$$ to attract
+2. players?
+-2.
+Approach other targets.
+SelectTarget2
+Give up on other targets.
+End2
+
+OusmaneYes3 1 -40 -1 2
+0. You have signed Ousmane for 40 million euros.
+0. You called Ole to inform him of this transfer.
+2. Ole: Thank you for making this transfer happen. I really appreciate it.
+0. Your media assistant has compiled some fan reactions from Twitter for you:
+2. @ManRedNo1Fan: Not too sure about this one, but 40m is a reasonable price.
+2. @FckManBlue: EXCUSE ME, how much are we paying him in wage??? This director 
+2. has no idea what he is doing. Since when are we relying on $$$ to attract
+2. players?
+-2.
+Approach other targets.
+SelectTarget2
+Give up on other targets.
+End2
+
+FacundoTalk1 1 0 0 0
+0. Facundo's club, Manyas, has informed you that they will only let Facundo leave
+0. if you pay trigger his release clause with 10 million euros. Manchester Blue
+0. and Ruhr Yellow has also enquired about this player.
+-2.
+Trigger the release clause with 10 million euros now.
+FacundoYes
+Reject the deal and approach other targets.
+FacundoNo
+
+FacundoYes 1 -10 2 1
+0. You have signed Facundo for 10 million euros.
+0. You called Ole to inform him of this transfer.
+2. Ole: This is a great start! However, Facundo will most likely be a backup
+2. player with his current capabilities. I still hope you can sign one of Jadon
+2. or Ousmane as our starter!
+0. Your media assistant has compiled some fan reactions from Twitter for you:
+2. @ManRedNo1Fan: I'm so happy we signed Facundo at this price! Such a bargain!
+2. @FckManBlue: So excited about this signing! Heard we beat Man Blue to sign
+2. him, so even better!
+-2.
+Approach other targets.
+SelectTarget3
+Give up on other targets.
+End1
+
+FacundoNo 0 0 -2 -1
+0. Manchester Blue triggered Facundo's release clause and signed him.
+0. You called Ole to inform him of this transfer.
+2. Ole: That's disappointing, but he will most likely be a backup
+2. player with his current capabilities anyway. If you can sign one of Jadon
+2. or Ousmane, this will still be a good transfer window!
+0. Your media assistant has compiled some fan reactions from Twitter for you:
+2. @ManRedNo1Fan: Why didn't we sign Facundo at such a low price? Can we not
+2. even afford 10m for such a talented player?
+2. @FckManBlue: Losing Facundo to Man Blue of all teams is a huge mistake by
+2. the club's director. I AM FURIOUS!!!
+-1.
+Approach other targets.
+SelectTarget3
+
+End1 0 0 -1 -1
+0. The transfer window has ended. Manchester Red still do not have a
+0. world-class Right Winger in the following season and ended up
+0. finishing only third in the league.
+-1.
+Restart
+Menu
+
+End2 0 0 -2 0
+0. The transfer window has ended. To the surprice of no one, Ousmane
+0. got injured in the second game of the following season and missed
+0. the entire season. Without a proper Right Winger again, Mancheste
+0. Red ended up finishing fifth in the league.
+-1.
+Restart
+Menu
+
+End3 0 0 0 0
+0. The transfer window has ended. Jadon brought a huge boost to the
+0. team and Manchester Red became the champion of the following season,
+0. beating Manchester Blue by one point. Fans are chanting your name
+0. as the greatest director the club has seen.
+-1.
+Restart
+Menu
+
+End4 0 0 0 0
+0. You are out of time. The transfer window has ended.
+-1.
+Restart
+Menu
+
+RealEnd 0 0 0 0
+0. Thank you for playing this game!
+0. Press ESC to quit.

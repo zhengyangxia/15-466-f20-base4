@@ -1,8 +1,10 @@
+#include "View.hpp"
+
 //Mode.hpp declares the "Mode::current" static member variable, which is used to decide where event-handling, updating, and drawing events go:
 #include "Mode.hpp"
 
 //The 'PlayMode' mode plays the game:
-#include "PlayMode.hpp"
+#include "StoryMode.hpp"
 
 //For asset loading:
 #include "Load.hpp"
@@ -53,11 +55,11 @@ int main(int argc, char **argv) {
 
 	//create window:
 	SDL_Window *window = SDL_CreateWindow(
-		"gp20 game4: choice-based game", //TODO: remember to set a title for your game!
+		"Transfer Saga", //TODO: remember to set a title for your game!
 		SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED,
 		1280, 720, //TODO: modify window size if you'd like
 		SDL_WINDOW_OPENGL
-		| SDL_WINDOW_RESIZABLE //uncomment to allow resizing
+		// | SDL_WINDOW_RESIZABLE //uncomment to allow resizing
 		| SDL_WINDOW_ALLOW_HIGHDPI //uncomment for full resolution on high-DPI screens
 	);
 
@@ -98,8 +100,8 @@ int main(int argc, char **argv) {
 	//------------ load assets --------------
 	call_load_functions();
 
-	//------------ create game mode + make current --------------
-	Mode::set_current(std::make_shared< PlayMode >());
+
+
 
 	//------------ main loop ------------
 
@@ -115,8 +117,11 @@ int main(int argc, char **argv) {
 		SDL_GL_GetDrawableSize(window, &w, &h);
 		drawable_size = glm::uvec2(w, h);
 		glViewport(0, 0, drawable_size.x, drawable_size.y);
+		view::ViewContext::set(window_size, drawable_size);
 	};
 	on_resize();
+	//------------ create game mode + make current --------------
+	Mode::set_current(std::make_shared< StoryMode >());
 
 	//This will loop until the current mode is set to null:
 	while (Mode::current) {
@@ -133,7 +138,7 @@ int main(int argc, char **argv) {
 				//handle input:
 				if (Mode::current && Mode::current->handle_event(evt, window_size)) {
 					// mode handled it; great
-				} else if (evt.type == SDL_QUIT) {
+				} else if (evt.type == SDL_QUIT || (evt.type == SDL_KEYDOWN && evt.key.keysym.sym == SDLK_ESCAPE)) {
 					Mode::set_current(nullptr);
 					break;
 				} else if (evt.type == SDL_KEYDOWN && evt.key.keysym.sym == SDLK_PRINTSCREEN) {
